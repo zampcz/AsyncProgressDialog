@@ -15,6 +15,13 @@ namespace APD
   widgets to inform the user about the state of the operation and a simple way to cancel the
   long operation at some point by the user.
 
+  \section download Download
+
+  The source code of this library is available on <a href="https://github.com/zampcz/AsyncProgressDialog">GitHub</a>.
+  The code is licenced under MIT licence.
+
+  \section sync Converting blocking code into non-blocking code
+
   This is a typical (and wrong) example of synchonous operation and a progress dialog in Qt:
 
   \snippet mainwindow.cpp SynchronousExample
@@ -53,7 +60,7 @@ namespace APD
   from within the thread. User may supply their own implementation of APD::TaskThread or use
   the lambda functions as decribed above.
 
-  \section progress-widgets Progress Widgets
+  \section progress-widgets Progress widgets
 
   By default, the dialog displays a simple progress bar (APD::ProgressBar) for each task added to the dialog.
   However, AsynchProgressDialog offers multiple progress widgets, which are capable of displaying not only
